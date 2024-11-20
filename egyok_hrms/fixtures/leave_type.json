@@ -1,0 +1,72 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": "VL",
+  "leave_type": "Vacation Leave",
+  "modified": "2024-11-15 11:53:15.082156",
+  "name": "LVTYPE0001",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": "SL",
+  "leave_type": "Sick Leave",
+  "modified": "2024-11-15 11:53:15.096489",
+  "name": "LVTYPE0002",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": "ML",
+  "leave_type": "Maternity Leave",
+  "modified": "2024-11-15 11:53:15.059065",
+  "name": "LVTYPE0003",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": "PL",
+  "leave_type": "Paternity Leave",
+  "modified": "2024-11-15 11:53:15.041845",
+  "name": "LVTYPE0004",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": null,
+  "leave_type": "Half-Day Leave",
+  "modified": "2024-11-15 11:53:15.025337",
+  "name": "LVTYPE0005",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": "LWP",
+  "leave_type": "Leave Without Pay ",
+  "modified": "2024-11-15 11:53:38.686600",
+  "name": "LVTYPE0006",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Leave Type",
+  "leave_code": null,
+  "leave_type": "Compensatory Off ",
+  "modified": "2024-11-15 11:53:14.968598",
+  "name": "LVTYPE0007",
+  "naming_series": "LVTYPE.####",
+  "with_pay": 1
+ }
+]

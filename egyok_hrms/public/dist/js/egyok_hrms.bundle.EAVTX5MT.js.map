@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../apps/egyok_hrms/egyok_hrms/public/js/utils/shift_common.js"],
+  "sourcesContent": ["frappe.provide(\"egyok_hrms.attendance\");\r\n\r\negyok_hrms.shift_common = {\r\n    setup_shift_controller: function() {\r\n        egyok_hrms.attendance.ShiftController = class ShiftController extends egyok_hrms.TransactionController {\r\n\r\n            // console.log(\"shift common\");\r\n        }\r\n    }\r\n}"],
+  "mappings": ";;AAAA,SAAO,QAAQ,uBAAuB;AAEtC,aAAW,eAAe;AAAA,IACtB,wBAAwB,WAAW;AAC/B,iBAAW,WAAW,kBAAkB,MAAM,wBAAwB,WAAW,sBAAsB;AAAA,MAGvG;AAAA,IACJ;AAAA,EACJ;",
+  "names": []
+}

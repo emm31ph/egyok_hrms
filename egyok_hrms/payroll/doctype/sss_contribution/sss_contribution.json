@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-17 17:35:48.945719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "range_of_compansation_section",
+  "from_amount",
+  "column_break_kywb",
+  "to_amount",
+  "amount_of_contributions_section",
+  "regular_ss",
+  "er",
+  "ee",
+  "column_break_yduu",
+  "wisp",
+  "wisp_er",
+  "wisp_ee"
+ ],
+ "fields": [
+  {
+   "fieldname": "range_of_compansation_section",
+   "fieldtype": "Section Break",
+   "label": "Range of Compansation"
+  },
+  {
+   "default": "0",
+   "fieldname": "from_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "From",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_kywb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "to_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "To",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "amount_of_contributions_section",
+   "fieldtype": "Section Break",
+   "label": "Amount of Contributions"
+  },
+  {
+   "default": "Regular SS",
+   "fieldname": "regular_ss",
+   "fieldtype": "Heading",
+   "label": "Regular SS"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "er",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "REG. ER",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "ee",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "REG. EE",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_yduu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wisp",
+   "fieldtype": "Heading",
+   "label": "WISP"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "wisp_er",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "WISP ER",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "wisp_ee",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "WISP EE",
+   "non_negative": 1,
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-17 20:38:32.808397",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "SSS Contribution",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

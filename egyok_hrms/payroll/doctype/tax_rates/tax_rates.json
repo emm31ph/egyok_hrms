@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-17 18:33:08.797414",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salary_type",
+  "column_break_edvr",
+  "prescribed_withholding_tax",
+  "base_tax",
+  "tax_rate",
+  "floor_amount",
+  "compensation_rage_section",
+  "from_amount",
+  "column_break_beym",
+  "to_amount"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "salary_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Salary Type",
+   "options": "Daily\nWeek\nSemi-Month\nMonth\nAnnual"
+  },
+  {
+   "fieldname": "column_break_edvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prescribed_withholding_tax",
+   "fieldtype": "Heading",
+   "label": "Prescribed Withholding Tax"
+  },
+  {
+   "fieldname": "compensation_rage_section",
+   "fieldtype": "Section Break",
+   "label": "Compensation Rage"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "from_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "From Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_beym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "to_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "To Amount",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "base_tax",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Base Tax",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "tax_rate",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Tax Rate",
+   "precision": "2"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "floor_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Floor Amount",
+   "non_negative": 1,
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-17 20:36:43.500473",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "TAX Rates",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-17 17:28:55.519471",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "philhealth",
+  "column_break_qcap",
+  "hdmf",
+  "sss_tab",
+  "sss_rates",
+  "tax_rate_tab",
+  "table_yfqa"
+ ],
+ "fields": [
+  {
+   "fieldname": "philhealth",
+   "fieldtype": "Percent",
+   "label": "PhilHealth",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_qcap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hdmf",
+   "fieldtype": "Float",
+   "label": "Pag-Ibig/HDMF",
+   "precision": "2"
+  },
+  {
+   "fieldname": "sss_tab",
+   "fieldtype": "Tab Break",
+   "label": "SSS Contribution"
+  },
+  {
+   "fieldname": "sss_rates",
+   "fieldtype": "Table",
+   "options": "SSS Contribution"
+  },
+  {
+   "fieldname": "tax_rate_tab",
+   "fieldtype": "Tab Break",
+   "label": "TAX Rate"
+  },
+  {
+   "fieldname": "table_yfqa",
+   "fieldtype": "Table",
+   "label": "Withholding TAX Table",
+   "options": "TAX Rates"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-17 20:35:53.807855",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "Payroll Earning and Deduction Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

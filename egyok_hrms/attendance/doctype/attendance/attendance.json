@@ -1,0 +1,224 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-17 16:37:58.482876",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "column_break_kwgy",
+  "company",
+  "abbr",
+  "employee_name",
+  "shift_type",
+  "attendance_details_section",
+  "date",
+  "column_break_miff",
+  "from_time",
+  "shift_from_time",
+  "column_break_rqci",
+  "to_time",
+  "shift_to_time",
+  "section_break_yrrm",
+  "remarks",
+  "late",
+  "undertime",
+  "import_logs",
+  "column_break_sxuv",
+  "restday",
+  "ot",
+  "nd",
+  "restday_ot",
+  "nd_ot",
+  "rates",
+  "perday",
+  "holiday",
+  "holiday_ot"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "AT-ABBR-.YYYY.MM.#####"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_kwgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fetch_from": "company.abbr",
+   "fieldname": "abbr",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Abbr"
+  },
+  {
+   "fieldname": "attendance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_miff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "In"
+  },
+  {
+   "fieldname": "column_break_rqci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "Out"
+  },
+  {
+   "fieldname": "section_break_yrrm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "shift_type",
+   "fieldtype": "Link",
+   "label": "Shift Type",
+   "options": "Shift Type"
+  },
+  {
+   "fieldname": "shift_from_time",
+   "fieldtype": "Time",
+   "label": "Shift (From Time)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shift_to_time",
+   "fieldtype": "Time",
+   "label": "Shift (To Time)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sxuv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "restday_ot",
+   "fieldtype": "Float",
+   "label": "Total Restday OT"
+  },
+  {
+   "fieldname": "rates",
+   "fieldtype": "Percent",
+   "label": "Rates"
+  },
+  {
+   "fieldname": "perday",
+   "fieldtype": "Float",
+   "label": "Perday",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "ot",
+   "fieldtype": "Float",
+   "label": "Overtime"
+  },
+  {
+   "fieldname": "nd_ot",
+   "fieldtype": "Float",
+   "label": "Night Differential OT"
+  },
+  {
+   "fieldname": "restday",
+   "fieldtype": "Float",
+   "label": "Restday"
+  },
+  {
+   "fieldname": "nd",
+   "fieldtype": "Float",
+   "label": "Night Differential"
+  },
+  {
+   "fieldname": "holiday",
+   "fieldtype": "Float",
+   "label": "Holiday"
+  },
+  {
+   "fieldname": "holiday_ot",
+   "fieldtype": "Float",
+   "label": "Holiday OT"
+  },
+  {
+   "fieldname": "late",
+   "fieldtype": "Float",
+   "label": "Late"
+  },
+  {
+   "fieldname": "undertime",
+   "fieldtype": "Float",
+   "label": "Undertime"
+  },
+  {
+   "fieldname": "import_logs",
+   "fieldtype": "Link",
+   "label": "Import Logs",
+   "options": "Import Log Details",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-20 18:10:49.530190",
+ "modified_by": "Administrator",
+ "module": "Attendance",
+ "name": "Attendance",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

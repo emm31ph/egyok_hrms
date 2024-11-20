@@ -5,6 +5,10 @@ app_description = "Human Resources Management System"
 app_email = "edmund.managuit@gmail.com"
 app_license = "mit"
 
+fixtures = [
+    "Leave Type",
+    "Payroll Earning and Deduction Settings"
+]
 # Apps
 # ------------------
 
@@ -27,6 +31,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/egyok_hrms/css/egyok_hrms.css"
 # app_include_js = "/assets/egyok_hrms/js/egyok_hrms.js"
+app_include_js = "egyok_hrms.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/egyok_hrms/css/egyok_hrms.css"
@@ -84,10 +89,11 @@ app_license = "mit"
 
 # before_install = "egyok_hrms.install.before_install"
 # after_install = "egyok_hrms.install.after_install"
-
+after_install = "egyok_hrms.install.after_install"
 # Uninstallation
 # ------------
 
+before_uninstall = "egyok_hrms.uninstall.before_uninstall"
 # before_uninstall = "egyok_hrms.uninstall.before_uninstall"
 # after_uninstall = "egyok_hrms.uninstall.after_uninstall"
 
@@ -98,12 +104,14 @@ app_license = "mit"
 
 # before_app_install = "egyok_hrms.utils.before_app_install"
 # after_app_install = "egyok_hrms.utils.after_app_install"
+after_app_install = "egyok_hrms.setup.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
+before_app_uninstall = "egyok_hrms.setup.before_app_uninstall"
 # before_app_uninstall = "egyok_hrms.utils.before_app_uninstall"
 # after_app_uninstall = "egyok_hrms.utils.after_app_uninstall"
 
